@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#iphone-frame {
+    position: relative;
+    width: 375px; /* iPhone 15 Pro width */
+    height: 812px; /* iPhone 15 Pro height */
+    border: 1px solid #000;
+    margin: 50px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.status-bar {
+    width: 100%;
+    height: 24px;
+    background: #000;
+}
+
+.navigation-bar {
+    width: 100%;
+    height: 60px;
+    background: #333;
+    display: grid;
+    grid-template-columns: auto 60px; /* Adjust the width of the hamburger menu icon */
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.app-name {
+    font-size: 24px;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 20px;
+}
+
+.product {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product h2 {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
